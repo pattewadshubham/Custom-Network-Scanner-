@@ -1,0 +1,12 @@
+[package]
+name = "vajra-target-resolver"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+vajra-common = { path = "../common" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+trust-dns-resolver = { workspace = true }
+ipnet = { workspace = true }

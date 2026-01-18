@@ -1,0 +1,13 @@
+[package]
+name = "vajra-storage"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+vajra-common = { path = "../common" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+async-trait = { workspace = true }
+sqlx = { workspace = true }
+uuid = { workspace = true }

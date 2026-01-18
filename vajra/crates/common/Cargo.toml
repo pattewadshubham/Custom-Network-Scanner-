@@ -1,0 +1,31 @@
+[package]
+name = "vajra-common"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Shared types, traits, and utilities for Vajra scanner ecosystem"
+repository.workspace = true
+
+[dependencies]
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+tokio = { workspace = true, features = ["rt", "sync", "time", "macros"] }
+uuid = { workspace = true, features = ["v4", "serde"] }
+chrono = { workspace = true, features = ["serde"] }
+async-trait = { workspace = true }
+thiserror = { workspace = true }
+
+# Optional dependencies for future features
+parking_lot = { version = "0.12", optional = true }
+tracing = { version = "0.1", optional = true }
+
+[features]
+default = []
+metrics = []
+tracing-support = ["tracing"]
+performance = ["parking_lot"]
+
+[lib]
+name = "vajra_common"
+path = "src/lib.rs"

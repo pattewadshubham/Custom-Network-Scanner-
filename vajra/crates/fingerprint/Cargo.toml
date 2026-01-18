@@ -1,0 +1,15 @@
+[package]
+name = "vajra-fingerprint"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+vajra-common = { path = "../common" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+async-trait = { workspace = true }
+regex = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+once_cell = "1.19"

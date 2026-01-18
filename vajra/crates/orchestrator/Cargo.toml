@@ -1,0 +1,12 @@
+[package]
+name = "vajra_orchestrator"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+vajra-common = { path = "../common" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+governor = { workspace = true }

@@ -1,0 +1,11 @@
+[package]
+name = "vajra-plugin-host"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+vajra-common = { path = "../common" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+wasmtime = { workspace = true }
